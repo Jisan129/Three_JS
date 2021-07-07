@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f92c5b38-ba11-4120-81c7-02bdb561319a" name="Default Changelist" comment="Can Rotate and animate">
+    <list default="true" id="f92c5b38-ba11-4120-81c7-02bdb561319a" name="Default Changelist" comment="Resize problem fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
       <workItem from="1625678129381" duration="86000" />
       <workItem from="1625680861640" duration="144000" />
       <workItem from="1625681460247" duration="5471000" />
-      <workItem from="1625698500972" duration="1183000" />
+      <workItem from="1625698500972" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="Can Dance with you">
       <created>1625681679130</created>
@@ -82,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625692200920</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Resize problem fixed">
+      <created>1625699888602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625699888602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Can Dance with you" />
     <MESSAGE value="Can Rotate and animate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can Rotate and animate" />
+    <MESSAGE value="Resize problem fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resize problem fixed" />
   </component>
 </project>

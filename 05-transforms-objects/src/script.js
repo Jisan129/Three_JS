@@ -55,10 +55,20 @@ window.addEventListener('resize',()=>{
     camera.aspect=sizes.width/sizes.height
     camera.updateProjectionMatrix()
     //update render
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))//for multiple devices
+
     renderer.setSize(sizes.width,sizes.height)
 
 })
 
+window.addEventListener('dblclick',()=>{
+    if(!document.fullscreenElement){
+            canvas.requestFullscreen()
+        }
+    else {
+            document.exitFullscreen()
+        }
+})
 
 //scale
 const sizes = {
@@ -88,6 +98,9 @@ const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 renderer.setSize(sizes.width, sizes.height)
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
+
+
 const clock=new THREE.Clock()
 const Tick=()=>{
    /* const elapsedTime=clock.getElapsedTime()
