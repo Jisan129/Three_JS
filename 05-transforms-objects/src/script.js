@@ -73,7 +73,8 @@ const Tick=()=>{
     cube1.rotation.y=Math.sin(elapsedTime*Math.PI)
     cube2.position.y=Math.sin(elapsedTime*Math.PI)
     cube2.position.x=Math.cos(elapsedTime*Math.PI)*/
-    camera.position.x=cursor.x*6
+    camera.position.x=Math.sin(cursor.x*Math.PI)*3
+    camera.position.z=Math.cos(cursor.x*Math.PI)*3
     camera.position.y=cursor.y*3
     camera.lookAt(new THREE.Vector3())
 
