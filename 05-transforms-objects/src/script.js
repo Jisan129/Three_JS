@@ -19,9 +19,10 @@ scene.add(group)
 const cube1=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshBasicMaterial({color:0x00ff00}))
 cube1.position.x=-1.5
 cube1.rotation.x=1
+/*
 group.add(cube1)
+*/
 const cube2=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshBasicMaterial({color:0x0000ff}))
-cube2.position.x=1.5
 group.add(cube2)
 
 
@@ -32,13 +33,23 @@ group.add(cube2)
 //axes helper
 const axesHelper = new THREE.AxesHelper(2)
 scene.add(axesHelper)
+//
+const cursor ={
+    x:0,
+    y:0
+}
+window.addEventListener('mousemove',(event)=>{
 
+        cursor.x=event.clientX/sizes.width-0.5
+        cursor.y=(event.clientY/sizes.height-0.5)*-1
+    }
+)
 
 
 //scale
 const sizes = {
-    width: 800,
-    height: 600
+    width: 1080,
+    height: 720
 }
 
 /**
@@ -58,10 +69,13 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 const clock=new THREE.Clock()
 const Tick=()=>{
-    const elapsedTime=clock.getElapsedTime()
+   /* const elapsedTime=clock.getElapsedTime()
     cube1.rotation.y=Math.sin(elapsedTime*Math.PI)
     cube2.position.y=Math.sin(elapsedTime*Math.PI)
-    cube2.position.x=Math.cos(elapsedTime*Math.PI)
+    cube2.position.x=Math.cos(elapsedTime*Math.PI)*/
+    camera.position.x=cursor.x*6
+    camera.position.y=cursor.y*3
+    camera.lookAt(new THREE.Vector3())
 
     renderer.render(scene, camera)
     window.requestAnimationFrame(Tick)
