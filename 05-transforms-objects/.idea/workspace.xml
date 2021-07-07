@@ -4,6 +4,7 @@
     <list default="true" id="f92c5b38-ba11-4120-81c7-02bdb561319a" name="Default Changelist" comment="Can Rotate and animate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,8 @@
       <workItem from="1625677105468" duration="961000" />
       <workItem from="1625678129381" duration="86000" />
       <workItem from="1625680861640" duration="144000" />
-      <workItem from="1625681460247" duration="4232000" />
+      <workItem from="1625681460247" duration="5471000" />
+      <workItem from="1625698500972" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="Can Dance with you">
       <created>1625681679130</created>
@@ -73,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625692179385</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Can Rotate and animate">
+      <created>1625692200920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625692200920</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -33,7 +33,9 @@ group.add(cube2)
  */
 //axes helper
 const axesHelper = new THREE.AxesHelper(2)
+/*
 scene.add(axesHelper)
+*/
 //
 const cursor ={
     x:0,
@@ -45,12 +47,23 @@ window.addEventListener('mousemove',(event)=>{
         cursor.y=(event.clientY/sizes.height-0.5)*-1
     }
 )
+//resizing
+window.addEventListener('resize',()=>{
+    sizes.width=window.innerWidth
+    sizes.height=window.innerHeight
+    //update camera
+    camera.aspect=sizes.width/sizes.height
+    camera.updateProjectionMatrix()
+    //update render
+    renderer.setSize(sizes.width,sizes.height)
+
+})
 
 
 //scale
 const sizes = {
-    width: 1080,
-    height: 720
+    width: window.innerWidth,
+    height: window.innerHeight
 }
 
 /**
@@ -59,6 +72,13 @@ const sizes = {
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
 
 camera.position.z=3
+camera.lookAt(cube1.position)
+//controls
+const controls =new OrbitControls(camera,canvas)
+controls.enableDamping=true
+
+
+
 scene.add(camera)
 
 /**
@@ -77,8 +97,10 @@ const Tick=()=>{
     camera.position.x=Math.sin(cursor.x*Math.PI)*3
     camera.position.z=Math.cos(cursor.x*Math.PI)*3
     camera.position.y=cursor.y*3
-    camera.lookAt(new THREE.Vector3())
+    camera.lookAt(cube1.position)
 
+    //controls
+    controls.update()
     renderer.render(scene, camera)
     window.requestAnimationFrame(Tick)
 

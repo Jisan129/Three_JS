@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.webgl{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+html,body{
+    overflow: hidden;
+}
